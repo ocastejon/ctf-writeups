@@ -205,7 +205,7 @@ Thus, it is clear that we need to decrypt the hard-coded value in order to obtai
 ## Decryption routine
 Looking at the encryption algorithm described above, it is clear that:
 - Since the encryption key is modified at each step, the *decryption* key  depends on the message that we have encrypted
-- The decryption key is the last value of the key during the encryption routine. We don't know tho decrypt the hard-coded encrypted flag
+- The decryption key is the last value of the key during the encryption routine. We don't know this value for the hard-coded encrypted flag
 - However, since this key is only one byte, it can be easily brute-forced
 
 From the Python code above we can easily yield the following decryption routine:
